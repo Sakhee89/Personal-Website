@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: "Zilla Slab", serif;
+    background-color: black;
+    color: white
+  }
+  
+  .App {
+    text-align: center;
+    color: #845ec2;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
