@@ -1,32 +1,38 @@
-import React from "react";
-
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript, SiPostgresql, SiExpress } from "react-icons/si";
-import { FaReact, FaVuejs, FaNode } from "react-icons/fa";
-import { useState } from "react";
+import React, { useState } from "react";
+import { AboutMe } from "./AboutMe";
+import { NavBar } from "./NavBar";
+import { Projects } from "./Projects";
 
 export function Main() {
   const [page, setPage] = useState({
     aboutMe: false,
-    skillset: false,
     projects: false,
   });
+
+  const handleAboutMeClick = () => {
+    setPage({
+      aboutMe: true,
+      projects: false,
+    });
+  };
+
+  const handleProjectsClick = () => {
+    setPage({
+      aboutMe: false,
+      projects: true,
+    });
+  };
+
   return (
-    <main>
-      <h1>About Me</h1>
-      <section>
-        Hi, I'm Kevin. I completed a intensive full Stack Software Developer
-        bootcamp with Northcoders in January 2024.{" "}
-      </section>
-      <h1>Skillset</h1>
-      <IoLogoJavascript />
-      <SiTypescript />
-      <FaReact />
-      <FaNode />
-      <FaVuejs />
-      <SiPostgresql />
-      <SiExpress />
-      <h1>Projects</h1>
-    </main>
+    <div>
+      <NavBar
+        handleAboutMeClick={handleAboutMeClick}
+        handleProjectsClick={handleProjectsClick}
+      />
+      <main>
+        {page.aboutMe && <AboutMe show={page.aboutMe} />}
+        {page.projects && <Projects show={page.projects} />}
+      </main>
+    </div>
   );
 }
