@@ -5,7 +5,7 @@ import { Projects } from "./Projects";
 
 export function Main() {
   const [page, setPage] = useState({
-    aboutMe: false,
+    aboutMe: true,
     projects: false,
   });
 
