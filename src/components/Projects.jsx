@@ -1,14 +1,15 @@
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiPostgresql, SiExpress, SiJest } from "react-icons/si";
 import { FaReact, FaVuejs, FaNode } from "react-icons/fa";
-import { ProjectCard } from "./ProjectsCard";
+import { ProjectCard } from "./ProjectCard";
+import { projectsData } from "../data/projectsData";
 
 export function Projects({ show }) {
   return (
     <section className="mt-10">
       {show && (
         <>
-          <h1>Skillset</h1>
+          <h1 className="text-2xl">Skillset</h1>
           <div className="mt-5 mb-5 flex flex-wrap gap-4 justify-center">
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
               <IoLogoJavascript />
@@ -35,8 +36,13 @@ export function Projects({ show }) {
               <SiJest />
             </a>
           </div>
-          <h1 className="mb-5">Projects</h1>
-          <ProjectCard />
+          <h1 className="mb-5 text-2xl">Projects</h1>
+
+          {projectsData.map((projectData) => {
+            return (
+              <ProjectCard projectData={projectData} key={projectData.id} />
+            );
+          })}
         </>
       )}
     </section>

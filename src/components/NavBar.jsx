@@ -5,13 +5,14 @@ export function NavBar({ handleAboutMeClick, handleProjectsClick }) {
   return (
     <nav className="border">
       <Header />
-      <div className="flex justify-center">
-        <div className="size-20 flex items-center item">
-          <SocialIcon url="https://github.com/Sakhee89/" />
-          <SocialIcon url="https://www.linkedin.com/in/kevin-chan-b7103b135/" />
-        </div>
+      <div>
+        <SocialIcon className="size-24" url="https://github.com/Sakhee89/" />
+        <SocialIcon
+          className="flex justify-center"
+          url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
+        />
       </div>
-      <div className="flex justify-center space-x-4 mb-4">
+      <div className="flex justify-center space-x-4 mb-4 mt-4">
         <span onClick={handleAboutMeClick} style={{ cursor: "pointer" }}>
           About Me
         </span>
