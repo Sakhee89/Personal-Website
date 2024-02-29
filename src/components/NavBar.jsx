@@ -1,14 +1,22 @@
 import { Header } from "./Header";
 import { SocialIcon } from "react-social-icons";
 
-export function NavBar({ handleAboutMeClick, handleProjectsClick }) {
+export function NavBar({
+  handleAboutMeClick,
+  handleProjectsClick,
+  handleContactMeClick,
+}) {
   return (
     <nav className="nav border">
       <Header />
       <div>
-        <SocialIcon className="size-24" url="https://github.com/Sakhee89/" />
         <SocialIcon
-          className="flex justify-center size-20"
+          className="mr-3"
+          style={{ height: 40, width: 40 }}
+          url="https://github.com/Sakhee89/"
+        />
+        <SocialIcon
+          style={{ height: 40, width: 40 }}
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
@@ -18,6 +26,9 @@ export function NavBar({ handleAboutMeClick, handleProjectsClick }) {
         </span>
         <span onClick={handleProjectsClick} style={{ cursor: "pointer" }}>
           Projects
+        </span>
+        <span onClick={handleContactMeClick} style={{ cursor: "pointer" }}>
+          Contact Me
         </span>
       </div>
     </nav>

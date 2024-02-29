@@ -9,34 +9,34 @@ export function Projects({ show }) {
     <section className="mt-10 pb-10">
       {show && (
         <>
-          <h1 className="text-2xl">Skillset</h1>
+          <h1 className="text-2xl font-bold">Skillset</h1>
           <div className="mt-5 mb-5 flex flex-wrap gap-4 justify-center">
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-              <IoLogoJavascript />
+              <IoLogoJavascript className="text-4xl" />
             </a>
             <a href="https://www.typescriptlang.org/">
-              <SiTypescript />
+              <SiTypescript className="text-4xl" />
             </a>
             <a href="https://react.dev/">
-              <FaReact />
+              <FaReact className="text-4xl" />
             </a>
             <a href="https://nodejs.org/en">
-              <FaNode />
+              <FaNode className="text-4xl" />
             </a>
             <a href="https://vuejs.org/">
-              <FaVuejs />
+              <FaVuejs className="text-4xl" />
             </a>
             <a href="https://www.postgresql.org/">
-              <SiPostgresql />
+              <SiPostgresql className="text-4xl" />
             </a>
             <a href="https://expressjs.com/">
-              <SiExpress />
+              <SiExpress className="text-4xl" />
             </a>
             <a href="https://jestjs.io/">
-              <SiJest />
+              <SiJest className="text-4xl" />
             </a>
           </div>
-          <h1 className="mb-5 text-2xl">Projects</h1>
+          <h1 className="mb-5 text-2xl font-bold">Projects</h1>
           <div className="flex justify-center items-center flex-col">
             {projectsData.map((projectData) => {
               return (
