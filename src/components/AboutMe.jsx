@@ -1,13 +1,13 @@
 export function AboutMe({ show }) {
   return (
-    <section className="mt-10 flex justify-center pb-5">
+    <section className="mt-10 flex justify-center pb-10">
       {show && (
         <div>
           <h1 className="text-2xl">About Me</h1>
-          <p className="mt-4 w-full max-w-sm hover:max-w-lg ">
-            Hello! I'm Kevin Chan, a Software Developer based in London. My
-            journey into the world of software development began with a solid
-            foundation gained from the intensive Northcoders bootcamp. <br></br>
+          <p className="mt-4 w-full max-w-lg">
+            Hello! I'm Kevin, a Software Developer based in London. My journey
+            into the world of software development began with a solid foundation
+            gained from the intensive Northcoders bootcamp. <br></br>
             <br></br>
             Background and Transition: <br></br>With a background as a Finance
             Analyst & Data Analytic Manager, I embarked on a transformative

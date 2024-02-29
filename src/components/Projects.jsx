@@ -6,7 +6,7 @@ import { projectsData } from "../data/projectsData";
 
 export function Projects({ show }) {
   return (
-    <section className="mt-10">
+    <section className="mt-10 pb-10">
       {show && (
         <>
           <h1 className="text-2xl">Skillset</h1>
@@ -37,12 +37,13 @@ export function Projects({ show }) {
             </a>
           </div>
           <h1 className="mb-5 text-2xl">Projects</h1>
-
-          {projectsData.map((projectData) => {
-            return (
-              <ProjectCard projectData={projectData} key={projectData.id} />
-            );
-          })}
+          <div className="flex justify-center items-center flex-col">
+            {projectsData.map((projectData) => {
+              return (
+                <ProjectCard projectData={projectData} key={projectData.id} />
+              );
+            })}
+          </div>
         </>
       )}
     </section>

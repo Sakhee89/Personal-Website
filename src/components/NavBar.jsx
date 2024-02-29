@@ -3,12 +3,12 @@ import { SocialIcon } from "react-social-icons";
 
 export function NavBar({ handleAboutMeClick, handleProjectsClick }) {
   return (
-    <nav className="border">
+    <nav className="nav border">
       <Header />
       <div>
         <SocialIcon className="size-24" url="https://github.com/Sakhee89/" />
         <SocialIcon
-          className="flex justify-center"
+          className="flex justify-center size-20"
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
