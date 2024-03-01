@@ -7,7 +7,7 @@ export function NavBar({
   handleContactMeClick,
 }) {
   return (
-    <nav className="nav border bg-gradient-to-r from-amber-800">
+    <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
       <Header />
       <div>
         <SocialIcon
@@ -20,7 +20,7 @@ export function NavBar({
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
-      <div className="flex justify-center space-x-4 mb-2 mt-4 text-black font-semibold">
+      <div className="flex justify-center space-x-4 py-4 text-black font-semibold">
         <span onClick={handleAboutMeClick} style={{ cursor: "pointer" }}>
           About Me
         </span>
@@ -31,6 +31,6 @@ export function NavBar({
           Contact Me
         </span>
       </div>
-    </nav>
+    </div>
   );
 }

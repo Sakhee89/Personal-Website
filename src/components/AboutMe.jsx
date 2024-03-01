@@ -4,7 +4,7 @@ export function AboutMe({ show }) {
       {show && (
         <div>
           <h1 className="text-2xl font-bold">About Me</h1>
-          <p className="mt-4 w-full max-w-lg">
+          <p className="mt-4 w-full md:max-w-lg lg:max-w-7xl">
             Hello! I'm Kevin, a Software Developer based in London. My journey
             into the world of software development began with a solid foundation
             gained from the intensive Northcoders bootcamp. <br></br>
