@@ -40,6 +40,7 @@ function App() {
         handleAboutMeClick={handleAboutMeClick}
         handleProjectsClick={handleProjectsClick}
         handleContactMeClick={handleContactMeClick}
+        page={page}
       />
       <Main page={page} />
     </>

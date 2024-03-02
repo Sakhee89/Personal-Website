@@ -6,7 +6,7 @@ import { projectsData } from "../data/projectsData";
 
 export function Projects({ show }) {
   return (
-    <section>
+    <section className="pb-8">
       {show && (
         <>
           <div className="pt-10">
