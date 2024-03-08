@@ -18,3 +18,7 @@ body {
 .header {
   font-family: zilla;
 }
+
+.custom-text-size {
+  font-size: 13px;
+}

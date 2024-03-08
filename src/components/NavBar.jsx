@@ -8,7 +8,7 @@ export function NavBar({
   page,
 }) {
   return (
-    <div className="bg-gradient-to-r from-blue-300 from-10% to-green-100 to-90%">
+    <div className="bg-gradient-to-r from-blue-300 from-10% to-green-100 to-90% text-center">
       <Header />
       <div>
         <SocialIcon
@@ -21,13 +21,12 @@ export function NavBar({
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
-      <div className="flex justify-center space-x-4 py-4 font-bold text-black header">
+      <div className="flex justify-center space-x-10 py-4 font-bold text-black ">
         <span
           onClick={handleAboutMeClick}
           style={{
             cursor: "pointer",
-            borderBottom: page.aboutMe ? "3px solid blue" : "none",
-            paddingBottom: "2px",
+            color: page.aboutMe ? "red" : "black",
           }}
         >
           About Me
@@ -36,8 +35,7 @@ export function NavBar({
           onClick={handleProjectsClick}
           style={{
             cursor: "pointer",
-            borderBottom: page.projects ? "3px solid blue" : "none",
-            paddingBottom: "2px",
+            color: page.projects ? "red" : "black",
           }}
         >
           Projects
@@ -46,8 +44,7 @@ export function NavBar({
           onClick={handleContactMeClick}
           style={{
             cursor: "pointer",
-            borderBottom: page.contactMe ? "3px solid blue" : "none",
-            paddingBottom: "2px",
+            color: page.contactMe ? "red" : "black",
           }}
         >
           Contact Me

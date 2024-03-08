@@ -1,1 +1,3 @@
-Hello! This is my personal website created using JavaScript and React.Js
+**Personal Website**
+
+Hello! This is my personal website created using JavaScript, React.Js, and Tailwind

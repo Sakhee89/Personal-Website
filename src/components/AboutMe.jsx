@@ -1,10 +1,10 @@
 export function AboutMe({ show }) {
   return (
-    <section className="pt-10 flex justify-center pb-8 px-5">
+    <section className="pt-10 flex justify-center pb-8">
       {show && (
         <div>
-          <h1 className="text-2xl font-bold">About Me</h1>
-          <p className="pt-4 w-full md:max-w-md lg:max-w-6xl">
+          <h1 className="text-2xl text-center font-bold">About Me</h1>
+          <p className="text-justify pt-4 w-full md:max-w-md lg:max-w-5xl">
             Hello! I'm Kevin, a Software Developer based in London. My journey
             into the world of software development began with a solid foundation
             gained from the intensive Northcoders bootcamp. <br></br>
