@@ -41,7 +41,7 @@ export function Projects({ show }) {
           <h1 className="text-center pt-10 pb-2 text-2xl font-bold">
             Projects
           </h1>
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col gap-4 px-4">
             {projectsData.map((projectData) => {
               return (
                 <div className="py-3">
