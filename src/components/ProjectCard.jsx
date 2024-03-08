@@ -11,7 +11,7 @@ export function ProjectCard({ projectData }) {
           return (
             <div
               key={index}
-              className="rounded-2xl border-2 border-black p-3 custom-text-size font-bold  text-neutral-950 bg-blue-200"
+              className="rounded-2xl border-2 border-gray-600 p-3 custom-text-size font-bold  text-gray-600 bg-blue-200"
             >
               {techStack}
             </div>
@@ -21,13 +21,13 @@ export function ProjectCard({ projectData }) {
 
       <div className="flex flex-wrap gap-5 justify-center pb-2">
         <a
-          className="border border-black text-md text-black font-bold bg-[#5dbea3] hover:bg-[#28a17f] p-4 rounded-lg"
+          className="border border-black text-md text-black font-bold bg-[#d0da19] hover:bg-[#bdc70e] p-4 rounded-lg"
           href={projectData.gitHub}
         >
           GitHub Repository
         </a>
         <a
-          className="text-md border border-black text-black font-bold bg-[#5dbea3] hover:bg-[#28a17f] p-4 rounded-lg"
+          className="text-md border border-black text-black font-bold bg-[#d0da19] hover:bg-[#bdc70e] p-4 rounded-lg"
           href={projectData.hosted}
         >
           Hosted Version
