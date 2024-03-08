@@ -21,31 +21,28 @@ export function NavBar({
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
-      <div className="flex justify-center space-x-10 py-4 font-bold text-black ">
+      <div className="flex justify-center space-x-10 py-4 font-bold text-black">
         <span
+          className={`cursor-pointer ${
+            page.aboutMe ? "text-red-500" : "text-black"
+          } hover:text-red-500`}
           onClick={handleAboutMeClick}
-          style={{
-            cursor: "pointer",
-            color: page.aboutMe ? "red" : "black",
-          }}
         >
           About Me
         </span>
         <span
+          className={`cursor-pointer ${
+            page.projects ? "text-red-500" : "text-black"
+          } hover:text-red-500`}
           onClick={handleProjectsClick}
-          style={{
-            cursor: "pointer",
-            color: page.projects ? "red" : "black",
-          }}
         >
           Projects
         </span>
         <span
+          className={`cursor-pointer ${
+            page.contactMe ? "text-red-500" : "text-black"
+          } hover:text-red-500`}
           onClick={handleContactMeClick}
-          style={{
-            cursor: "pointer",
-            color: page.contactMe ? "red" : "black",
-          }}
         >
           Contact Me
         </span>
