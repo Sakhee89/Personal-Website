@@ -5,12 +5,13 @@ export function NavBar({
   handleAboutMeClick,
   handleProjectsClick,
   handleContactMeClick,
+  handleHomeClick,
   page,
 }) {
   return (
-    <div className="bg-gradient-to-r from-blue-300 from-10% to-green-100 to-90% text-center">
-      <Header />
-      <div>
+    <div className="bg-white text-center tracking-widest">
+      <Header handleHomeClick={handleHomeClick} />
+      <div className="flex justify-center">
         <SocialIcon
           className="mr-3"
           style={{ height: 40, width: 40 }}
@@ -21,7 +22,16 @@ export function NavBar({
           url="https://www.linkedin.com/in/kevin-chan-b7103b135/"
         />
       </div>
-      <div className="flex justify-center space-x-10 py-4 font-bold text-black">
+
+      <div className="flex justify-center space-x-10 py-4 font text-black custom-font">
+        <span
+          className={`cursor-pointer ${
+            page.home ? "text-red-500" : "text-black"
+          } hover:text-red-500`}
+          onClick={handleHomeClick}
+        >
+          Home
+        </span>
         <span
           className={`cursor-pointer ${
             page.aboutMe ? "text-red-500" : "text-black"
@@ -44,7 +54,7 @@ export function NavBar({
           } hover:text-red-500`}
           onClick={handleContactMeClick}
         >
-          Contact Me
+          Contact
         </span>
       </div>
     </div>

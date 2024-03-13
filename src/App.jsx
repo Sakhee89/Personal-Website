@@ -1,17 +1,29 @@
 import "./App.css";
+import { Home } from "./components/Home";
 import { Main } from "./components/Main";
 import { NavBar } from "./components/NavBar";
 import React, { useState } from "react";
 
 function App() {
   const [page, setPage] = useState({
-    aboutMe: true,
+    home: true,
+    aboutMe: false,
     projects: false,
     contactMe: false,
   });
 
+  const handleHomeClick = () => {
+    setPage({
+      home: true,
+      aboutMe: false,
+      projects: false,
+      contactMe: false,
+    });
+  };
+
   const handleAboutMeClick = () => {
     setPage({
+      home: false,
       aboutMe: true,
       projects: false,
       contactMe: false,
@@ -20,6 +32,7 @@ function App() {
 
   const handleProjectsClick = () => {
     setPage({
+      home: false,
       aboutMe: false,
       projects: true,
       contactMe: false,
@@ -40,8 +53,10 @@ function App() {
         handleAboutMeClick={handleAboutMeClick}
         handleProjectsClick={handleProjectsClick}
         handleContactMeClick={handleContactMeClick}
+        handleHomeClick={handleHomeClick}
         page={page}
       />
+
       <Main page={page} />
     </>
   );

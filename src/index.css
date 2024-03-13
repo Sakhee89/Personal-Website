@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: "Zilla Slab", serif;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: white;
 }
 
@@ -16,9 +16,18 @@ body {
 }
 
 .header {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Robotto", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .custom-text-size {
   font-size: 13px;
+}
+
+.custom-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-font {
+  font-family: "Poiret One, cursive";
 }

@@ -1,13 +1,14 @@
 export function AboutMe({ show }) {
   return (
-    <section className="pt-10 flex justify-center pb-8">
+    <section className="pt-10 flex justify-center pb-8 ">
       {show && (
         <div className="max-w-screen-lg px-4">
           <h1 className="text-2xl text-center font-bold">About Me</h1>
-          <p className="text-justify pt-4">
-            Hello! I'm Kevin, a Software Developer based in London. My journey
-            into the world of software development began with a solid foundation
-            gained from the intensive Northcoders bootcamp. <br />
+          <p className="text-justify pt-4 tracking-wider">
+            Hello everyone! My name is Kevin, a Software Developer based in
+            London. My journey into the world of software development began with
+            a solid foundation gained from the intensive Northcoders bootcamp.
+            <br />
             <br />
             <b>Background and Transition:</b>
             <br />
@@ -16,7 +17,8 @@ export function AboutMe({ show }) {
             software development. I've always been intrigued by the power of
             technology to solve complex problems and streamline processes. This
             transition reflects my profound commitment to transforming ideas
-            into efficient and user-friendly software solutions. <br />
+            into efficient and user-friendly software solutions.
+            <br />
             <br />
             <b>Technical Skills:</b>
             <br />
@@ -39,16 +41,6 @@ export function AboutMe({ show }) {
             seamlessly. My experience in software development has honed my
             problem-solving skills and equipped me with the ability to adapt to
             evolving tech stacks.
-            <br />
-            <br />
-            <b>Education and Learning Journey:</b>
-            <br />
-            I hold a MSC in Finance and Investment from the University of
-            Brighton, where I developed analytical and critical thinking skills
-            crucial for my transition into software development. Additionally,
-            my continuous pursuit of learning through platforms like
-            CodeAcademy, Udemy, and FreeCodeCamp underscores my dedication to
-            personal and professional growth.
             <br />
             <br />
             <b>Interests and Future Aspirations:</b>
