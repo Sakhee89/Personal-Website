@@ -1,17 +1,19 @@
 export function ProjectCard({ projectData }) {
   return (
     <section className="text-center border border-yellow-600 rounded-xl w-full max-w-xl mx-auto p-3 bg-orange-500">
-      <h2 className="mt-3 mb-3 font-bold text-lg text-neutral-950">
+      <h2 className="mt-3 mb-3 font-bold text-lg text-neutral-950 tracking-wider">
         {projectData.title}
       </h2>
-      <p className="pb-5 text-neutral-950">{projectData.description}</p>
+      <p className="pb-5 px-3 text-neutral-950 tracking-wide">
+        {projectData.description}
+      </p>
 
       <div className="flex flex-wrap gap-3 justify-center pb-3 mb-3">
         {projectData.techStacks.map((techStack, index) => {
           return (
             <div
               key={index}
-              className="rounded-2xl border-2 border-gray-600 p-3 custom-text-size font-bold  text-gray-600 bg-blue-200"
+              className="rounded-2xl border-2 border-gray-600 p-3 custom-text-size font-bold  text-gray-600 bg-[#e9eef1] tracking-wide"
             >
               {techStack}
             </div>

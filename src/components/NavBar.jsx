@@ -23,7 +23,7 @@ export function NavBar({
         />
       </div>
 
-      <div className="flex justify-center space-x-10 py-4 font text-black custom-font">
+      <div className="flex justify-center space-x-10 py-4 px-6 font text-black custom-font">
         <span
           className={`cursor-pointer ${
             page.home ? "text-red-500" : "text-black"

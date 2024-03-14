@@ -6,11 +6,13 @@ import { projectsData } from "../data/projectsData";
 
 export function Projects({ show }) {
   return (
-    <section className="pb-8">
+    <section className="pb-8 px-6">
       {show && (
         <>
           <div className="pt-10">
-            <h1 className="text-center text-2xl font-bold pb-3">Skillset</h1>
+            <h1 className="tracking-wider text-center text-2xl font-bold pb-3">
+              Skillset
+            </h1>
             <div className="flex flex-wrap gap-4 justify-center pt-2">
               <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
                 <IoLogoJavascript className="text-4xl" />
@@ -38,7 +40,7 @@ export function Projects({ show }) {
               </a>
             </div>
           </div>
-          <h1 className="text-center pt-10 pb-2 text-2xl font-bold">
+          <h1 className="tracking-wider text-center pt-10 pb-2 text-2xl font-bold">
             Projects
           </h1>
           <div className="flex justify-center items-center flex-col gap-4 px-4">
