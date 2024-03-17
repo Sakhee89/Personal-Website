@@ -22,7 +22,7 @@ export function MobileNavBar({
       onClick={toggleMenu}
     >
       <div className="w-[45vw] h-screen bg-[#342864] p-8">
-        <h1 className="mb-12">Portfolio</h1>
+        <h1 className="mb-12 header">My Portfolio</h1>
         <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
           <li className="mx-6">
             <span className="navBar-a-styling" onClick={handleHomeClick}>
