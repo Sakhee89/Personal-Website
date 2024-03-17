@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .navBar-a-styling {
+    @apply text-[0.9rem] font-medium relative cursor-pointer before:w-8 before:h-[0.2rem] before:bg-gradient-to-r before:from-[#a993f3] before:to-[#7e61e7] before:rounded-lg before:absolute before:bottom-[-0.6rem] before:opacity-0 before:translate-x-[-1.5rem] before:transition-all before:ease-linear before:duration-300 before:hover:w-full before:hover:translate-x-0 before:hover:opacity-100;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Zilla Slab", serif;
@@ -30,4 +36,8 @@ body {
 
 .home-font {
   font-family: "Poiret One, cursive";
+}
+
+.custom-background {
+  background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
 }
