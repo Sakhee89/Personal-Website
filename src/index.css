@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: "Zilla Slab", serif;
-  background-color: rgb(30, 30, 30);
+  background: linear-gradient(90deg, #100534 0%, #050112 100%);
   color: white;
 }
 
