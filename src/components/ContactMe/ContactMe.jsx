@@ -12,9 +12,18 @@ export function ContactMe() {
           <EmailForm />
         </div>
         <div className="md:w-1/2 md:order-1">
-          <ContactInfoCard urlText="https://github.com/Sakhee89/" />
-          <ContactInfoCard urlText="https://www.linkedin.com/in/kevin-chan-b7103b135/" />
-          <ContactInfoCard urlText="mailto:KevinChan01@outlook.com" />
+          <ContactInfoCard
+            urlText="https://github.com/Sakhee89/"
+            iconText="https://github.com/Sakhee89/"
+          />
+          <ContactInfoCard
+            urlText="https://www.linkedin.com/in/kevin-chan-b7103b135/"
+            iconText="https://www.linkedin.com/in/kevin-chan-b7103b135/"
+          />
+          <ContactInfoCard
+            urlText="KevinChan01@outlook.com"
+            iconText="mailto:KevinChan01@outlook.com"
+          />
         </div>
       </div>
     </section>
