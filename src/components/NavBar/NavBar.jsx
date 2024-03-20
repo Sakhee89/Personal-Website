@@ -16,7 +16,7 @@ export function NavBar({
   }
 
   return (
-    <nav className="bg-black text-white py-2 sticky top-0 z-30 backdrop-blur-[50px] px-8 md:px-0">
+    <nav className="bg-gradient-to-r from-[#100534] to-[#050112] text-white py-2 sticky top-0 z-30 backdrop-blur-[50px] px-8 md:px-0">
       <MobileNavBar
         isOpen={openMenu}
         toggleMenu={toggleMenu}
@@ -27,7 +27,7 @@ export function NavBar({
         page={page}
       />{" "}
       <div className="max-w-[1700px] flex items-center justify-between py-4 mb-auto">
-        <h1 className="px-4 header">My Portfolio</h1>
+        <h1 className="px-10 header">My Portfolio</h1>
         <ul className="hidden items-center gap-2 list-none md:flex">
           <li className="mx-6">
             <span className="navBar-a-styling" onClick={handleHomeClick}>
