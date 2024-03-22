@@ -25,22 +25,25 @@ export function MobileNavBar({
         <h1 className="mb-12 header">My Portfolio</h1>
         <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
           <li className="mx-6">
-            <span className="navBar-a-styling" onClick={handleHomeClick}>
+            <span className="navBar-span-styling" onClick={handleHomeClick}>
               Home
             </span>
           </li>
           <li className="mx-6">
-            <span className="navBar-a-styling" onClick={handleAboutMeClick}>
+            <span className="navBar-span-styling" onClick={handleAboutMeClick}>
               About
             </span>
           </li>
           <li className="mx-6">
-            <span className="navBar-a-styling" onClick={handleProjectsClick}>
+            <span className="navBar-span-styling" onClick={handleProjectsClick}>
               Projects
             </span>
           </li>
           <li className="mx-6">
-            <span className="navBar-a-styling" onClick={handleContactMeClick}>
+            <span
+              className="navBar-span-styling"
+              onClick={handleContactMeClick}
+            >
               Contact Me
             </span>
           </li>

@@ -39,22 +39,22 @@ export function NavBar({
         </div>
         <ul className="hidden items-center gap-2 list-none  md:flex md:mr-10">
           <li className="mx-6">
-            <span className="navBar-a-styling" onClick={handleHomeClick}>
+            <span className="navBar-span-styling" onClick={handleHomeClick}>
               Home
             </span>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling" onClick={handleAboutMeClick}>
+            <a className="navBar-span-styling" onClick={handleAboutMeClick}>
               About
             </a>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling" onClick={handleProjectsClick}>
+            <a className="navBar-span-styling" onClick={handleProjectsClick}>
               Projects
             </a>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling" onClick={handleContactMeClick}>
+            <a className="navBar-span-styling" onClick={handleContactMeClick}>
               Contact Me
             </a>
           </li>
