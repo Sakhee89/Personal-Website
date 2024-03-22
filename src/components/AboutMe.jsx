@@ -2,7 +2,7 @@ export function AboutMe() {
   return (
     <section className="pt-10 flex justify-center pb-8">
       <div className="max-w-screen-lg px-6 tracking-wider">
-        <h1 className="text-2xl text-center font-bold ">About Me</h1>
+        <h1 className="text-2xl text-center font-bold">About Me</h1>
         <p className="text-justify pt-4 pb-7">
           Hello everyone! My name is Kevin, a Software Developer based in
           London. My journey into the world of software development began with a

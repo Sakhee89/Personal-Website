@@ -45,9 +45,10 @@ export function EmailForm() {
 
   return (
     <div className="w-full rounded-[0.3rem] p-8 bg-[#1a103d] border-[1.5px] border-solid border-[#6751b9] sm:rounded-[0.6rem]">
-      <h2 className="flex justify-center pb-[1.2rem]">GET IN TOUCH</h2>
+      <h2 className="flex justify-start pb-[1.2rem]">GET IN TOUCH</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         <div className="items-start flex-col sm:flex sm:items-center gap-6">
+          <label>Your First Name</label>
           <input
             className="form-styling sm:mb-0 mb-6"
             type="text"
@@ -57,6 +58,7 @@ export function EmailForm() {
             required
             onChange={handleChange}
           />
+          <label>Your Last Name</label>
           <input
             className="form-styling"
             type="text"
@@ -67,6 +69,7 @@ export function EmailForm() {
             onChange={handleChange}
           />
         </div>
+        <label>Your Email</label>
         <input
           className="form-styling"
           type="email"
@@ -76,6 +79,7 @@ export function EmailForm() {
           required
           onChange={handleChange}
         />
+        <label>Your Message</label>
         <textarea
           className="form-styling"
           type="text"

@@ -1,6 +1,6 @@
-import { SocialIcon } from "react-social-icons";
 import { useState } from "react";
 import { MobileNavBar } from "./MobileNavBar";
+import KCLogo from "./Logo.png";
 
 export function NavBar({
   handleAboutMeClick,
@@ -27,8 +27,17 @@ export function NavBar({
         page={page}
       />{" "}
       <div className="max-w-[1700px] flex items-center justify-between py-4 mb-auto">
-        <h1 className="px-10 header">My Portfolio</h1>
-        <ul className="hidden items-center gap-2 list-none md:flex">
+        <div className="flex">
+          <img
+            className="ml-4 md:ml-[8rem]"
+            src={KCLogo}
+            alt="Logo"
+            width="40"
+            height="40"
+          ></img>
+          <h1 className="p-2 ml-3 text-xl font-bold">Kevin Chan</h1>
+        </div>
+        <ul className="hidden items-center gap-2 list-none  md:flex md:mr-10">
           <li className="mx-6">
             <span className="navBar-a-styling" onClick={handleHomeClick}>
               Home
