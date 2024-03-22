@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MobileNavBar } from "./MobileNavBar";
-import KCLogo from "./Logo.png";
+import KCLogo from "../../../public/Logo.png";
 
 export function NavBar({
   handleAboutMeClick,

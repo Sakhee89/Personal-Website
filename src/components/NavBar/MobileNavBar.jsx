@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import KCLogo from "./Mobile_Logo.png";
+import KCLogo from "../../../public/Mobile_Logo.png";
 
 export function MobileNavBar({
   isOpen,
@@ -24,7 +24,7 @@ export function MobileNavBar({
     >
       <div className="w-[45vw] h-screen bg-[#342864] p-8">
         <img
-          className="mb-5 md:ml-[8rem]"
+          className="mb-8 md:ml-[8rem]"
           src={KCLogo}
           alt="Logo"
           width="40"
