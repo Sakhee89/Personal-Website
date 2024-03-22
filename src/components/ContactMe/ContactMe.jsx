@@ -5,7 +5,7 @@ export function ContactMe() {
   return (
     <section className="pb-8 px-6 xl:max-w-[1300px] xl:mx-auto xl:last:relative">
       <div className="pt-10">
-        <h1 className="tracking-wider text-center text-[1.3rem] font-bold mb-12">
+        <h1 className="tracking-wider text-center text-2xl font-bold mb-12">
           Contact Me
         </h1>
         <div className="md:flex md:gap-12">

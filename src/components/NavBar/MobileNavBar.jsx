@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import KCLogo from "./Mobile_Logo.png";
 
 export function MobileNavBar({
   isOpen,
@@ -22,7 +23,13 @@ export function MobileNavBar({
       onClick={toggleMenu}
     >
       <div className="w-[45vw] h-screen bg-[#342864] p-8">
-        <h1 className="mb-12 header">My Portfolio</h1>
+        <img
+          className="mb-5 md:ml-[8rem]"
+          src={KCLogo}
+          alt="Logo"
+          width="40"
+          height="40"
+        ></img>
         <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
           <li className="mx-6">
             <span className="navBar-span-styling" onClick={handleHomeClick}>
