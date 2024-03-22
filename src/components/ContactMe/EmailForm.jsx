@@ -45,7 +45,9 @@ export function EmailForm() {
 
   return (
     <div className="w-full rounded-[0.3rem] p-8 bg-[#1a103d] border-[1.5px] border-solid border-[#6751b9] sm:rounded-[0.6rem]">
-      <h2 className="flex justify-center pb-[2rem] text-lg">GET IN TOUCH</h2>
+      <h2 className="flex justify-center pb-[2rem] text-lg font-bold">
+        GET IN TOUCH
+      </h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         <div className="items-start flex-col gap-6 sm:flex ">
           <label>Your First Name</label>
