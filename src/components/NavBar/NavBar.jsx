@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MobileNavBar } from "./MobileNavBar";
-import KCLogo from "../../../public/Logo.png";
+import KCLogo from "/Logo.png";
 
 export function NavBar({
   handleAboutMeClick,
@@ -27,15 +27,15 @@ export function NavBar({
         page={page}
       />{" "}
       <div className="max-w-[1700px] flex items-center justify-between py-4 mb-auto">
-        <div className="flex">
+        <div className="flex gap-2">
           <img
-            className="ml-4 md:ml-[8rem]"
+            className="w-9 h-9 object-contain md:ml-[8rem]"
             src={KCLogo}
             alt="Logo"
-            width="40"
-            height="40"
           ></img>
-          <h1 className="p-2 ml-3 text-xl font-bold">Kevin Chan</h1>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex mt-1">
+            Kevin &nbsp;<span className="md:block hidden"> | Developer</span>
+          </p>
         </div>
         <ul className="hidden items-center gap-2 list-none  md:flex md:mr-10">
           <li className="mx-6">

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import KCLogo from "../../../public/Mobile_Logo.png";
+import KCLogo from "/Mobile_Logo.png";
 
 export function MobileNavBar({
   isOpen,
